@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+   
+    int t1, t2, t3;
+   
+    printf("Введіть три значення: ");
+    scanf("%d %d %d", &t1, &t2, &t3);
+   
+    double combined_rate = (1.0 / t1) + (1.0 / t2) + (1.0 / t3);
+    
+    double time_together = 1.0 / combined_rate;
+    
+    printf("Час, необхідний для з'їдання пирога: %.2f годин\n", time_together);
+    
+    return 0;
+}
